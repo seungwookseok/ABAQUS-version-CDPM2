@@ -1,2 +1,3 @@
 # ABAQUS-version-CDPM2
-This repository contains the user-material (VUMAT) of the concrete damage-plasticity model (CDPM2) for use in ABAQUS
+This repository contains the user-material (VUMAT) of the concrete damage-plasticity model (CDPM2) for use in ABAQUS.
+The CDPM2 was originally developed by 
