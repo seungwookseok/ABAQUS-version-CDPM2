@@ -11,7 +11,7 @@ The concrete damaged-plasticity (**CDP**) model available in ABAQUS is one of th
 
 
 
-<center><img src="tri_comp.gif" alt="tri_comp" width="80%"></center>
+<img src="tri_comp.gif" alt="tri_comp" width="80%" aligh="center">
 
 ***Figure 1.*** *Stress-Strain responses of concrete material models (CDPM2 and CDP model) for triaxial compression states with different constant lateral confining pressures (17.2 MPa, 30.1 MPa, and 43 MPa), compared with the test data [[Imran and Pantazopoulou, 1996]](https://www.concrete.org/publications/internationalconcreteabstractsportal/m/details/id/9865)*
 
@@ -21,7 +21,7 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
-<center>Note: the README will be updated soon.</center>
+Note: the README will be updated soon.
 
 
 
