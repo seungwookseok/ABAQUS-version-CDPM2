@@ -25,11 +25,13 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
-<p align="center">
+## How to Use
 
-Note: the README will be updated soon.
+**To be updated.**
 
-</p>
+
+
+*Please email me if you have any troubles using ABAQUS-CDPM2 at <sseok@purdue.edu>*
 
 
 
