@@ -1,11 +1,13 @@
-c Concrete damage-plasticity model (CDPM2) _ VUMAT for ABAQUS
+c Concrete damage-plasticity model 2 (CDPM2) _ VUMAT for ABAQUS
 c
-c orgiginally developed for use in LS-DYNA by Dimitrios Xenos and Peter Grassl (Univ. of Glasgow, UK)
-c modified for use in ABAQUS by Seungwook Seok, a PhD candidate in Civil Eng. at Purdue, USA
-c completed in 2019-07-21
+c The CDPM2 was orgiginally developed by the research group of Dr. Peter Grassl (Univ. of Glasgow, UK)
+c and has been implemented in LS-DYNA as MAT CDPM (MAT 273).
+c Afterwards, it was revised for use in ABAQUS by Seungwook Seok (a PhD student in Civil Eng. at Purdue Univ., USA)
+c updated in 2019-07-21
 c
 c*****************************************************************
 c Support page: http://petergrassl.com/Research/DamagePlasticity/CDPMLSDYNA/index.html
+c               https://github.com/seungwookseok/ABAQUS-version-CDPM2
 c
 c Key references: 
 c 1) P. Grassl, D. Xenos, U. Nyström, R. Rempling, K. Gylltoft.: "CDPM2: A damage-plasticity approach to modelling the failure of concrete". International Journal of Solids and Structures. Volume 50, Issue 24, pp. 3805-3816, 2013.
@@ -15,7 +17,7 @@ c*****************************************************************
 c
 c-----------------------------------------------------------------
 c # of properties (props) = 13
-c # of state variables (state) = 28
+c # of state variables (state) = 49
 c-----------------------------------------------------------------
 c User-defined material properties are as follows:
 c
@@ -25,7 +27,7 @@ c props(3) pr: Poisson’s ratio
 c props(4) fc': Concrete uniaxial compressive strength
 c props(5) ft: Concrete uniaxial tensile strength
 c props(6) gft: Fracture energy 
-c props(7) gfc: Crushing energy 
+c props(7) gfc: Crushing energy (not used, to be updated)
 c props(8) ah: Parameter of the hardening ductility measure
 c props(9) bh: Parameter of the hardening ductility measure
 c props(10) ch: Parameter of the hardening ductility measure
@@ -63,6 +65,7 @@ c state(*,25) --------- total strain along yz (or 23)
 c state(*,26) --------- total strain along xz (or 13)
 c state(*,27) --------- equivalent strain (without rate factor influence)
 c state(*,28) --------- element deletion flag: "1" active, "0" inactive (deleted element)
+c state(*,29:49) ------ to be updated
 c-----------------------------------------------------------------
 
       subroutine vumat(
@@ -241,8 +244,8 @@ c Material constants
       fc = props(4)
       ft = props(5)
       gft = props(6)
-      gfc = props(7)
-      gfc = 25 ! (N/mm)
+c      gfc = props(7)
+c      gfc = 25 ! (N/mm)
       ah = props(8)
       bh = props(9)
 c      bh = 0.0025 ! Bh
@@ -295,10 +298,7 @@ c      fb = 1.16*fc ! Kupfer et al. (1969)
          tempkappaP = stateOld(i,1)
          length = charLength(i)
 		 
-c         efc = 0.0002
          efc = 0.0001
-c         efc = (2.*gfc) / (ft*length) ! Concrete fracturing strain
-c         write(*,*) '   efc = ',efc
 	 
          jacobianOld(1,1) = stateOld(i,29)
          jacobianOld(1,2) = stateOld(i,30)
