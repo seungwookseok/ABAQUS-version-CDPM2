@@ -49,6 +49,8 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 [3] [P. Grassl and M. Jirásek. "Damage-plastic model for concrete failure". International Journal of Solids and Structures. Vol. 43, pp. 7166-7196, 2006.](https://www.sciencedirect.com/science/article/pii/S002076830600240X)
 
+[4] [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3368644.svg)](https://doi.org/10.5281/zenodo.3368644)
+
 
 
 
