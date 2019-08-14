@@ -35,10 +35,6 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
-*Please email me if you have any troubles using ABAQUS-CDPM2 at <sseok@purdue.edu>*
-
-
-
 <br />
 
 ## Examples
@@ -63,5 +59,4 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
-
-
+*Please email me if you have any troubles using ABAQUS-CDPM2 at <sseok@purdue.edu>*
