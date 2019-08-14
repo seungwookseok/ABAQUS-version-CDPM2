@@ -25,7 +25,11 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
+<p align="center">
+
 Note: the README will be updated soon.
+
+</p>
 
 
 
