@@ -13,7 +13,7 @@ The concrete damaged-plasticity (**CDP**) model available in ABAQUS is one of th
 
 <p align="center">
 
-<img src="tri_comp.gif" alt="tri_comp" width="80%">
+<img src="tri_comp.gif" alt="tri_comp" width="70%">
 
 </p>
 
