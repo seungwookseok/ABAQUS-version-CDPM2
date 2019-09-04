@@ -64,11 +64,9 @@ The concrete material properties and parameters that have to be properly defined
 
 <img src="properties.png" alt="tri_comp" width="70%">
 
-<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2</i></div>
-
 </p>
 
-
+<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2</i></div>
 
 
 
