@@ -147,7 +147,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
        <img src="step2.png" alt="step2" width="80%">
    </p>
 
-   (here, "opt/abaqus/6.14.6/ecn/bin" was aforetyped to specify the folder that contains Abaqus command)
+   (here, "opt/abaqus/6.14.6/ecn/bin" was aforetyped to specify the folder that contains Abaqus command file)
 
 4. open the created *odb* file via Abaqus/CAE once the run is done.
 
