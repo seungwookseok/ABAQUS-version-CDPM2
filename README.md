@@ -125,7 +125,17 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
 <br />
 
-## Running ABAQUS with CDPM2 on Server
+## Running ABAQUS with CDPM2
+
+#### On Abaqus/CAE
+
+***To be updated.***
+
+
+
+<br />
+
+#### On Server
 
 **Prerequisite**: Abaqus input file (***.inp) and *cdpm2vumat.f* must be located in the same folder.
 
