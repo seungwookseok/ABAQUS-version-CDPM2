@@ -134,7 +134,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 1. open any *ssh* (Secure Shell) client and access the server
 
    <p align="center">
-       <img src="step1.png" alt="step1" width="70%">
+       <img src="step2.png" alt="step2" width="70%">
    </p>
 
 2. move to the folder where the input file and *cdpm2vumat.f* are located.
@@ -144,7 +144,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
    ​	***abaqus  job=input_file_name  user=cdpm2vumat.f  double=both***
 
    <p align="center">
-       <img src="step2.png" alt="step2" width="80%">
+       <img src="step3.png" alt="step3" width="80%">
    </p>
 
    (here, "opt/abaqus/6.14.6/ecn/bin" was aforetyped to specify the folder that contains Abaqus command file)
