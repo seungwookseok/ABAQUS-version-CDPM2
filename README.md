@@ -85,7 +85,7 @@ The solution-dependent state variables (hereafter termed state variables or SDVs
 
 <br />
 
-## How to Input Properties for CDPM2
+## How to Input Properties/Parameters for CDPM2
 
 To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the parameters discussed above have to be inputted by creating a material (here, named conc_grassl_imran) in Abaqus/CAE. This material must be defined with ***Depvar*** and ***User Material***. The ***Density***, associated with gravitational force, is optional. 
 
