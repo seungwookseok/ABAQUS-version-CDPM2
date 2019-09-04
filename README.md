@@ -107,7 +107,7 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
     <img src="input2.png" alt="input2" width="100%">
 </p>
 
-<div style="text-align:center"><i><b>Figure 3.</b> "Depvar" defined for cdpm2vumat.f </i></div>
+<div style="text-align:center"><i><b>Figure 4.</b> "Depvar" defined for cdpm2vumat.f </i></div>
 
 <br />
 
@@ -121,7 +121,7 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
     <img src="input3.png" alt="input3" width="100%">
 </p>
 
-<div style="text-align:center"><i><b>Figure 4.</b> "User Material" defined for cdpm2vumat.f </i></div>
+<div style="text-align:center"><i><b>Figure 5.</b> "User Material" defined for cdpm2vumat.f </i></div>
 
 
 
