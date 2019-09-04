@@ -33,11 +33,7 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 The concrete material properties and parameters that have to be properly defined for ABAQUS-CDPM2 ("***cdpm2vumat.f*** " shared in this repository) are listed below:
 
-* (1)  unit flag.
-
-  : 0 for US Costumery units
-
-    1 for SI units (1)  unit flag
+* (1) unit flag : **0** for US Costumery units or **1** for SI units.
 
 * (2) Young's modulus.
 
