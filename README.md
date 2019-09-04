@@ -67,23 +67,35 @@ The concrete material properties and parameters that have to be properly defined
 
 
 
+<br />
 
+## How to Use *VUMAT* of CDPM2
+
+To use the VUMAT of CDPM2 ("cdpm2vumat.f" shared in this repository) in ABAQUS, the values for the parameters discussed above have to be inputted by creating a material (here, named conc_grassl_imran). This material must be defined with  **Depvar** and **User Material**. The **Density**, associated with gravitational force, is optional.
+
+* **Depvar**
+  - <u>Number of solution-dependent state variables</u>: a total 49 state variables are used.
+  - Variable number controlling element deletion: 28 (this indicates that the 28th state plays a role in determining element deletion when that function is ON, but the currently shared cdpm2vumat does not consider element deletion function)
+
+
+
+<p align="center">
+    <img src="input2.png" alt="input2" width="100%">
+</p>
+
+
+
+<br />
+
+## Running ABAQUS with CDPM2 on Server
+
+Here the step-by-step procedure 
 
 
 
 
 
 <br />
-
-## Examples
-
-**To be updated.**
-
-
-
-<br />
-
-
 
 ## References
 
