@@ -12,7 +12,6 @@ The concrete damaged-plasticity (**CDP**) model available in ABAQUS is one of th
 
 
 <p align="center">
-
 <img src="tri_comp.gif" alt="tri_comp" width="70%">
 
 </p>
@@ -29,9 +28,51 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 <br />
 
-## How to Use
+## Material Properties and Parameters for CDPM2
 
-**To be updated.**
+The concrete material properties and parameters that have to be properly defined for the use of CDPM2 are given as follows:
+
+> (1)  unit flag.
+>
+> > > * 0 for US Costumery units
+> > >
+> > > * 1 for SI units (1)  unit flag
+
+> (2) Young's modulus.
+>
+> (3) Poisson's ratio.
+>
+> (4) uniaxial compressive strength.
+>
+> (5) uniaxial tensile strength.
+>
+> (6) ~~fracture energy.~~ 
+>
+> (7) crushing energy.
+>
+> (8) ~ (11) a<sub>h</sub> , b<sub>h</sub> , c<sub>h</sub> , and d<sub>h</sub> : parameters for hardening ductility measure.
+>
+> (12) h<sub>p</sub> : hardening modulus for q<sub>h2</sub>.
+>
+> (13) a<sub>s</sub> : parameter for softening ductility measure.
+>
+> **Note**
+>
+> * The fracture energy (6) is not currently used, but has to be inputted with any number, e.g., "0".
+>
+> * For the detailed information about the parameters (8) ~ (13), please see [Grassl et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0020768313002886?via%3Dihub)
+
+<p align="center">
+
+<img src="properties.png" alt="tri_comp" width="70%">
+
+<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2</i></div>
+
+</p>
+
+
+
+
 
 
 
