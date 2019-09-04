@@ -127,11 +127,29 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
 ## Running ABAQUS with CDPM2 on Server
 
+**Prerequisite**: Abaqus input file (***.inp) and *cdpm2vumat.f* must be located in the same folder.
+
 The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is as follows:
 
+1. open any *ssh* (Secure Shell) client and access the server
 
+   <p align="center">
+       <img src="step1.png" alt="step1" width="70%">
+   </p>
 
-***To be updated.***
+2. move to the folder where the input file and *cdpm2vumat.f* are located.
+
+3. run your job by typing the following command:
+
+   ​	***abaqus  job=input_file_name  user=cdpm2vumat.f  double=both***
+
+   <p align="center">
+       <img src="step2.png" alt="step2" width="80%">
+   </p>
+
+   (here, "opt/abaqus/6.14.6/ecn/bin" was aforetyped to specify the folder that contains Abaqus command)
+
+4. open the created *odb* file via Abaqus/CAE once the run is done.
 
 
 
