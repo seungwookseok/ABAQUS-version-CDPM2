@@ -66,7 +66,7 @@ The concrete material properties and parameters that have to be properly defined
 
 </p>
 
-<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2</i></div>
+<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
 
 
 
