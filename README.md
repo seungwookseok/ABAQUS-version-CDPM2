@@ -25,7 +25,7 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 
 
-<br/>
+<br />
 
 ## Material Properties and Parameters for CDPM2
 
@@ -63,13 +63,9 @@ The concrete material properties and parameters that have to be properly defined
     <img src="properties.png" alt="properties" width="70%">
 </p>
 
+<div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
 
 
-
-
-
-
-<p style="text-align: center;"><div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div></p>
 
 
 
@@ -77,7 +73,7 @@ The concrete material properties and parameters that have to be properly defined
 
 
 
-<br/>
+<br />
 
 ## Examples
 
@@ -85,7 +81,7 @@ The concrete material properties and parameters that have to be properly defined
 
 
 
-<br/>
+<br />
 
 
 
@@ -99,6 +95,6 @@ The concrete material properties and parameters that have to be properly defined
 
 
 
-<br/>
+<br />
 
 *Please email me if you have any troubles using ABAQUS-CDPM2 at <sseok@purdue.edu>*
