@@ -27,9 +27,11 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 <br />
 
-## Material Properties and Parameters of CDPM2
+## Material Properties/Parameters and State Variables 
 
-The concrete material properties and parameters that have to be properly defined for ABAQUS-CDPM2 ("***cdpm2vumat.f*** " shared in this repository) are listed as follows:
+#### Material Properties/Parameters 
+
+The concrete material properties and parameters that have to be properly defined for ABAQUS-CDPM2 ("***cdpm2vumat.f*** " shared in this repository) are listed below:
 
 * (1)  unit flag.
   * 0 for US Costumery units
@@ -65,6 +67,22 @@ The concrete material properties and parameters that have to be properly defined
 
 <div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
 
+<br />
+
+
+
+#### Solution-Dependent State Variables (SDVs)
+
+The solution-dependent state variables (hereafter termed state variables or SDVs) are values that can be defined to evolve with the solution of an analysis [[Simulia, 2013]](http://dsk.ippt.pan.pl/docs/abaqus/v6.13/books/usb/default.htm?startat=pt05ch23s06abm39.html). The SDVs can be used to store (both current and old) data for each material point and can also be used for updating next field/state variables. The *cdpm2vumat* consists of a total of **49 SDVs** with 21 SDVs related to the Jacobian matrix for return mapping (to be updated).  The details about these SDVs are given below in Figure 3.
+
+
+
+<p align="center">
+    <img src="sdvs.png" alt="sdvs" width="100%">
+</p>
+
+<div style="text-align:center"><i><b>Figure 3.</b> state variables (SDVs) defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
+
 
 
 <br />
@@ -77,7 +95,7 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
   - *Number of solution-dependent state variables*
 
-    : total **49** state variables are used.
+    : **49** SDVs (as explained in the previous section)
 
   - *Variable number controlling element deletion*
 
@@ -111,9 +129,11 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
 ## Running ABAQUS with CDPM2 on Server
 
-Here the step-by-step procedure 
+The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is as follows:
 
 
+
+***To be updated.***
 
 
 
