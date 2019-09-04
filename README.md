@@ -19,7 +19,7 @@ The concrete damaged-plasticity (**CDP**) model available in ABAQUS is one of th
 
 
 
-
+<br />
 
 Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material under wide range of experimental results, including the material responses under monotonic loading, cyclic loading, and even high strain rate loading. For more information, please visit the [related website](https://petergrassl.com/Research/DamagePlasticity/index.html).
 
@@ -90,6 +90,8 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 </p>
 
 <div style="text-align:center"><i><b>Figure 3.</b> "Depvar" defined for cdpm2vumat.f </i></div>
+
+<br />
 
 - ***User Material***
 
