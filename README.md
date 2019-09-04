@@ -27,9 +27,9 @@ Furthermore, the CDPM2 has shown robust nonlinear behavior of concrete material 
 
 <br />
 
-## Material Properties and Parameters for CDPM2
+## Material Properties and Parameters of CDPM2
 
-The concrete material properties and parameters that have to be properly defined for the use of CDPM2 are given as follows:
+The concrete material properties and parameters that have to be properly defined for ABAQUS-CDPM2 ("***cdpm2vumat.f*** " shared in this repository) are listed as follows:
 
 * (1)  unit flag.
   * 0 for US Costumery units
@@ -47,11 +47,11 @@ The concrete material properties and parameters that have to be properly defined
 
 * (7) crushing energy.
 
-* (8) ~ (11) a<sub>h</sub> , b<sub>h</sub> , c<sub>h</sub> , and d<sub>h</sub> : parameters for hardening ductility measure.
+* (8) ~ (11) a<sub>h</sub> , b<sub>h</sub> , c<sub>h</sub> , and d<sub>h</sub> : parameters for hardening ductility measure and typically defined as **0.08**, **0.003**, **2**, and **1E-6**, respectively.
 
-* (12) h<sub>p</sub> : hardening modulus for q<sub>h2</sub>.
+* (12) h<sub>p</sub> : hardening modulus for q<sub>h2</sub> and typically defined as **0.01**.
 
-* (13) a<sub>s</sub> : parameter for softening ductility measure.
+* (13) a<sub>s</sub> : parameter for softening ductility measure. This value varies from 1.5 to 15 according to [Grassl et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0020768313002886?via%3Dihub)
 
   ***Note***
 
@@ -69,19 +69,39 @@ The concrete material properties and parameters that have to be properly defined
 
 <br />
 
-## How to Use *VUMAT* of CDPM2
+## How to Input Properties for CDPM2
 
-To use the VUMAT of CDPM2 ("cdpm2vumat.f" shared in this repository) in ABAQUS, the values for the parameters discussed above have to be inputted by creating a material (here, named conc_grassl_imran). This material must be defined with  **Depvar** and **User Material**. The **Density**, associated with gravitational force, is optional.
+To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the parameters discussed above have to be inputted by creating a material (here, named conc_grassl_imran) in Abaqus/CAE. This material must be defined with ***Depvar*** and ***User Material***. The ***Density***, associated with gravitational force, is optional. 
 
-* **Depvar**
-  - <u>Number of solution-dependent state variables</u>: a total 49 state variables are used.
-  - Variable number controlling element deletion: 28 (this indicates that the 28th state plays a role in determining element deletion when that function is ON, but the currently shared cdpm2vumat does not consider element deletion function)
+* ***Depvar***
+
+  - *Number of solution-dependent state variables*
+
+    : total **49** state variables are used.
+
+  - *Variable number controlling element deletion*
+
+    : **28** (this indicates that the 28th state plays a role in determining element deletion when that function is ON, but the currently shared cdpm2vumat does not consider element deletion function)
 
 
 
 <p align="center">
     <img src="input2.png" alt="input2" width="100%">
 </p>
+
+<div style="text-align:center"><i><b>Figure 3.</b> "Depvar" defined for cdpm2vumat.f </i></div>
+
+- ***User Material***
+
+  ​	: all the material properties and parameters must be provided in the *User Material* in the same order presented in the previous section.
+
+
+
+<p align="center">
+    <img src="input3.png" alt="input3" width="100%">
+</p>
+
+<div style="text-align:center"><i><b>Figure 4.</b> "User Material" defined for cdpm2vumat.f </i></div>
 
 
 
