@@ -1,5 +1,5 @@
-# ABAQUS-CDPM2 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3368644.svg)](https://doi.org/10.5281/zenodo.3368644)
-This repository contains the **ABAQUS user-material (*VUMAT*)** of the concrete damage-plasticity model 2 (**CDPM2**). The CDPM2 was originally developed by the research group of [***Dr. Peter Grassl***](https://petergrassl.com/) at University of Glasgow and has been implemented in LS-DYNA as **MAT_CDPM** (**MAT_273**). Afterwards, it was revised for use in ABAQUS as *VUMAT*, so-called **ABQUS-CDPM2**, by ***Seungwook Seok***, a PhD student at Purdue University.
+# Abaqus-CDPM2 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3368644.svg)](https://doi.org/10.5281/zenodo.3368644)
+This repository contains the **Abaqus user-material (*VUMAT*)** of the concrete damage-plasticity model 2 (**CDPM2**). The CDPM2 was originally developed by the research group of [***Dr. Peter Grassl***](https://petergrassl.com/) at University of Glasgow and has been implemented in LS-DYNA as **MAT_CDPM** (**MAT_273**). Afterwards, it was revised for use in ABAQUS as *VUMAT*, so-called **Abaqus-CDPM2**, by ***Seungwook Seok***, a PhD student at Purdue University.
 
 
 
@@ -203,4 +203,8 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 
 <br />
 
+***When citing, please use*** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3368644.svg)](https://doi.org/10.5281/zenodo.3368644)
+
 *Please email me at <sseok@purdue.edu> if you have any troubles using ABAQUS-CDPM2*
+
+*(Last Updated on: September 5, 2019 )*
