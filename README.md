@@ -79,7 +79,6 @@ The solution-dependent state variables (hereafter termed state variables or SDVs
 </p>
 
 <div style="text-align:center"><i><b>Figure 3.</b> state variables (SDVs) defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
-
 <br />
 
 ## How to Input Properties/Parameters for CDPM2
@@ -116,12 +115,11 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 </p>
 
 <div style="text-align:center"><i><b>Figure 5.</b> "User Material" defined for cdpm2vumat.f </i></div>
-
 <br />
 
 ## Running ABAQUS with CDPM2
 
-This section introduces two ways to run ABQUS input file with *VUMAT* of CDPM2 (*cdpm2vumat.f*): one (1) on Abaqus/CAE or the other (2) on server.
+This section introduces two ways to run ABQUS input file with *VUMAT* of CDPM2 (*cdpm2vumat.f*): one (1) on Abaqus/CAE and the other (2) on server.
 
 #### On Abaqus/CAE
 
