@@ -205,6 +205,6 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 
 ***When citing, please use*** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3368644.svg)](https://doi.org/10.5281/zenodo.3368644)
 
-*Please email me at <sseok@purdue.edu> if you have any troubles using ABAQUS-CDPM2*
+*Please email me at <sseok@purdue.edu> if you have any troubles using Abaqus-CDPM2*
 
 *(Last Updated on: September 5, 2019 )*
