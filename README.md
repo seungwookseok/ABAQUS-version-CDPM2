@@ -129,7 +129,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on Abaqus/CAE is as fol
 
 2. Go to *Step* module.
 
-   Field output request.
+   Edit *Field output request*.
 
    Check ***SDV, solution dependent state variables*** under State/Field/User/Time.
 
