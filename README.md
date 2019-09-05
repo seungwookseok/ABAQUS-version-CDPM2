@@ -55,7 +55,7 @@ The concrete material properties and parameters that have to be properly defined
 
   ***Note***
 
-  *The fracture energy (6) is not currently used, but has to be inputted with any number, e.g., "0".*
+  *The fracture energy (6) is not currently used, but has to be inputted with any value, e.g., "0" (do not  leave in blank!).
 
   *For the detailed information about the parameters (8) ~ (13), please see [Grassl et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0020768313002886?via%3Dihub)*
 
@@ -64,7 +64,6 @@ The concrete material properties and parameters that have to be properly defined
 </p>
 
 <div style="text-align:center"><i><b>Figure 2.</b> Material Properties and parameters defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
-
 <br />
 
 
@@ -80,8 +79,6 @@ The solution-dependent state variables (hereafter termed state variables or SDVs
 </p>
 
 <div style="text-align:center"><i><b>Figure 3.</b> state variables (SDVs) defined for CDPM2 (imamge captured from "cdpm2vumat.f")</i></div>
-
-
 
 <br />
 
@@ -106,7 +103,6 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 </p>
 
 <div style="text-align:center"><i><b>Figure 4.</b> "Depvar" defined for cdpm2vumat.f </i></div>
-
 <br />
 
 - ***User Material***
@@ -121,17 +117,39 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
 <div style="text-align:center"><i><b>Figure 5.</b> "User Material" defined for cdpm2vumat.f </i></div>
 
-
-
 <br />
 
 ## Running ABAQUS with CDPM2
 
+This section introduces two ways to run ABQUS input file with *VUMAT* of CDPM2 (*cdpm2vumat.f*): one (1) on Abaqus/CAE or the other (2) on server.
+
 #### On Abaqus/CAE
 
-***To be updated.***
+The step-by-step procedure for running ABAQUS with CDPM2 on Abaqus/CAE is as follows:
 
+1. open CAE file
 
+2. Go to *Step* module.
+
+   Field output request.
+
+   Check ***SDV, solution dependent state variables*** under State/Field/User/Time.
+
+   <p align="center">
+       <img src="step1-1.png" alt="step1-1" width="100%">
+   </p>
+
+3. Go to *Job* module and do *Edit Job*.
+
+   Under *General*, **locate the folder that contains** ***cdpm2vumat.f***.
+
+   <p align="center">
+       <img src="step1-2.png" alt="step1-2" width="100%">
+   </p>
+
+4. Submit the job.
+
+   
 
 <br />
 
@@ -144,7 +162,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 1. open any *ssh* (Secure Shell) client and access the server
 
    <p align="center">
-       <img src="step2.png" alt="step2" width="70%">
+       <img src="step2-1.png" alt="step2-1" width="70%">
    </p>
 
 2. move to the folder where the input file and *cdpm2vumat.f* are located.
@@ -154,10 +172,10 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
    ​	***abaqus  job=input_file_name  user=cdpm2vumat.f  double=both***
 
    <p align="center">
-       <img src="step3.png" alt="step3" width="80%">
+       <img src="step2-2.png" alt="step2-2" width="80%">
    </p>
 
-   (here, "opt/abaqus/6.14.6/ecn/bin" was aforetyped to specify the folder that contains Abaqus command file)
+   (here, "opt/abaqus/6.14.6/ecn/bin/" was aforetyped to specify the folder that contains Abaqus command file)
 
 4. open the created *odb* file via Abaqus/CAE once the run is done.
 
@@ -167,7 +185,7 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 
 ## Examples
 
-***To be updated.***
+(***To be updated.***)
 
 
 
@@ -185,4 +203,4 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 
 <br />
 
-*Please email me if you have any troubles using ABAQUS-CDPM2 at <sseok@purdue.edu>*
+*Please email me at <sseok@purdue.edu> if you have any troubles using ABAQUS-CDPM2*
