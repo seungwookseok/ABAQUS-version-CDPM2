@@ -181,14 +181,6 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 
 <br />
 
-## Examples
-
-(***To be updated.***)
-
-
-
-<br />
-
 ## References
 
 [1] [P. Grassl, D. Xenos, U. Nyström, R. Rempling, K. Gylltoft. "CDPM2: A damage-plasticity approach to modelling the failure of concrete". International Journal of Solids and Structures. Volume 50, Issue 24, pp. 3805-3816, 2013.](https://www.sciencedirect.com/science/article/pii/S0020768313002886?via%3Dihub)
@@ -202,7 +194,5 @@ The step-by-step procedure for running ABAQUS with CDPM2 on a server platform is
 <br />
 
 ***When citing, please use*** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3387498.svg)](https://doi.org/10.5281/zenodo.3387498)
-
-*Please email me at <sseok@purdue.edu> if you have any troubles using Abaqus-CDPM2*
 
 *(Last Updated on: September 5, 2019 )*
