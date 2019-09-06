@@ -125,6 +125,8 @@ Then, go to *Step* module. Edit *Field output request*. Check ***SDV, solution d
     <img src="step1-1.png" alt="step1-1" width="100%">
 </p>
 
+<div style="text-align:center"><i><b>Figure 6.</b> Field output request to include SDV</i></div>
+
 
 
 <br />
