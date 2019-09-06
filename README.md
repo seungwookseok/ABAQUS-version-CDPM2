@@ -43,9 +43,9 @@ The concrete material properties and parameters that have to be properly defined
 
 * (5) uniaxial tensile strength.
 
-* (6) ~~fracture energy.~~ 
+* (6) fracture energy.
 
-* (7) crushing energy.
+* (7) ~~crushing energy~~.
 
 * (8) ~ (11) a<sub>h</sub> , b<sub>h</sub> , c<sub>h</sub> , and d<sub>h</sub> : parameters for hardening ductility measure and typically defined as **0.08**, **0.003**, **2**, and **1E-6**, respectively.
 
@@ -55,7 +55,7 @@ The concrete material properties and parameters that have to be properly defined
 
   ***Note***
 
-  *The fracture energy (6) is not currently used, but has to be inputted with any value, e.g., "0" (do not  leave in blank!).
+  *The crushing energy (7) is not currently used, but has to be inputted with any value, e.g., "0" (do not  leave in blank!).
 
   *For the detailed information about the parameters (8) ~ (13), please see [Grassl et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0020768313002886?via%3Dihub)*
 
@@ -116,7 +116,6 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 
 <div style="text-align:center"><i><b>Figure 5.</b> "User Material" defined for cdpm2vumat.f </i></div>
 
-
 <br />
 
 Then, go to *Step* module. Edit *Field output request*. Check ***SDV, solution dependent state variables*** under State/Field/User/Time. This should be done to record SDV output data throughout the analysis.
@@ -126,7 +125,6 @@ Then, go to *Step* module. Edit *Field output request*. Check ***SDV, solution d
 </p>
 
 <div style="text-align:center"><i><b>Figure 6.</b> Field output request to include SDV</i></div>
-
 
 
 <br />
