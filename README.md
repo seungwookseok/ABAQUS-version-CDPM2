@@ -83,7 +83,7 @@ The solution-dependent state variables (hereafter termed state variables or SDVs
 
 ## How to Input Properties/Parameters for CDPM2
 
-To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the parameters discussed above have to be inputted by creating a material (here, named conc_grassl_imran) in Abaqus/CAE. This material must be defined with ***Depvar*** and ***User Material***. The ***Density***, associated with gravitational force, is optional. 
+To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the parameters discussed above have to be inputted by creating a material in Abaqus/CAE. This material must be defined with ***Depvar*** and ***User Material***. The ***Density***, associated with gravitational force, is optional. To do this, in ABAQUS/CAE, go to *Property* module and create material (here, named conc_grassl_imran) and include *Depvar*, *User Material*, and *Density* (if necessary), with the associated input variables for each as detailed below.
 
 * ***Depvar***
 
@@ -115,11 +115,25 @@ To link the VUMAT of CDPM2 (***cdpm2vumat.f***) with ABAQUS, the values for the 
 </p>
 
 <div style="text-align:center"><i><b>Figure 5.</b> "User Material" defined for cdpm2vumat.f </i></div>
+
+
+<br />
+
+Then, go to *Step* module. Edit *Field output request*. Check ***SDV, solution dependent state variables*** under State/Field/User/Time. This should be done to record SDV output data throughout the analysis.
+
+<p align="center">
+    <img src="step1-1.png" alt="step1-1" width="100%">
+</p>
+
+
+
 <br />
 
 ## Running ABAQUS with CDPM2
 
 This section introduces two ways to run ABQUS input file with *VUMAT* of CDPM2 (*cdpm2vumat.f*): one (1) on Abaqus/CAE and the other (2) on server.
+
+
 
 #### On Abaqus/CAE
 
@@ -127,24 +141,14 @@ The step-by-step procedure for running ABAQUS with CDPM2 on Abaqus/CAE is as fol
 
 1. open CAE file
 
-2. Go to *Step* module.
-
-   Edit *Field output request*.
-
-   Check ***SDV, solution dependent state variables*** under State/Field/User/Time.
-
-   <p align="center">
-       <img src="step1-1.png" alt="step1-1" width="100%">
-   </p>
-
-3. Go to *Job* module and do *Edit Job*.
+2. Go to *Job* module and do *Edit Job*.
 
    Under *General*, **locate the folder that contains** ***cdpm2vumat.f***.
 
    <p align="center">
-       <img src="step1-2.png" alt="step1-2" width="100%">
+    <img src="step1-2.png" alt="step1-2" width="100%">
    </p>
-
+   
 4. Submit the job.
 
    
